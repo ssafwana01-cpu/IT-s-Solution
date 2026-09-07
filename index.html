@@ -441,7 +441,7 @@ footer{ background:var(--navy-950); color:var(--ink-muted); padding:70px 0 30px;
 .service-card{
   background:var(--white);
   border:1px solid var(--line-light);
-  border-radius:0;
+  border-radius:var(--radius-lg);
   padding:24px 22px 26px;
   transition:transform .35s var(--ease), box-shadow .35s var(--ease), border-color .35s var(--ease);
 }
@@ -573,16 +573,23 @@ footer{ background:var(--navy-950); color:var(--ink-muted); padding:70px 0 30px;
 /* ============ PROCESS ============ */
 .process-list{ display:flex; flex-direction:column; }
 .process-item{
-  display:grid; grid-template-columns:70px 1fr; gap:24px;
+  display:grid; grid-template-columns:48px 1fr; gap:24px;
   padding:26px 0;
   border-top:1px solid var(--line-light);
   align-items:start;
 }
 .process-item:last-child{ border-bottom:1px solid var(--line-light); }
-.process-num{ font-family:var(--font-mono); font-size:22px; color:var(--cyan-500); font-weight:600; }
+.process-num{
+  font-family:var(--font-mono); font-size:18px; color:var(--cyan-500); font-weight:600;
+  width:48px; height:48px;
+  display:flex; align-items:center; justify-content:center;
+  background:var(--white);
+  border:1px solid var(--line-light);
+  border-radius:0;
+}
 .process-item h3{ font-size:18px; margin-bottom:6px; }
 .process-item p{ color:var(--ink-muted-dark); font-size:14.5px; max-width:560px; }
-@media (max-width:640px){ .process-item{ grid-template-columns:44px 1fr; gap:14px; } .process-num{font-size:18px;} }
+@media (max-width:640px){ .process-item{ grid-template-columns:48px 1fr; gap:14px; } .process-num{width:40px;height:40px;font-size:15px;} }
 
 /* ============ CONTACT ============ */
 .contact-wrap{ display:grid; grid-template-columns:0.85fr 1.15fr; gap:56px; }
@@ -763,7 +770,7 @@ footer{ background:var(--navy-950); color:var(--ink-muted); padding:70px 0 30px;
       <div class="section-head reveal">
         <span class="eyebrow">What We Do</span>
         <h2>A complete digital presence, built and managed in one place.</h2>
-        <p>From a first website to ongoing social media, advertising and content, IT's Solution puts the pieces together so your business shows up online the way it should.</p>
+        <p>From a first website to ongoing social media, advertising and content, IT's Solution puts the pieces together for your business.</p>
       </div>
       <div id="servicesCategories"></div>
     </div>
@@ -795,7 +802,7 @@ footer{ background:var(--navy-950); color:var(--ink-muted); padding:70px 0 30px;
         <div class="split-item">
           <span class="eyebrow">Creative — Video</span>
           <h3 style="margin-top:12px;">Video Editing</h3>
-          <p>Short reel or video Editing depends on client requirments.</p>
+          <p>Short reels and video editing based on client requirements.</p>
           <div class="tag-pill-row" style="margin-top:16px;">
             <span class="tag-pill">Instagram Reels</span>
             <span class="tag-pill">Facebook</span>
@@ -808,7 +815,7 @@ footer{ background:var(--navy-950); color:var(--ink-muted); padding:70px 0 30px;
         <div class="split-item">
           <span class="eyebrow">Creative — Graphic Design</span>
           <h3 style="margin-top:12px;">Graphic Designing</h3>
-          <p>Consistent, on-brand visuals for the posts, ads and materials your business actually needs each week.</p>
+          <p>Consistent, on-brand visuals for the posts, ads and materials your business needs each week.</p>
           <div class="tag-pill-row" style="margin-top:16px;">
             <span class="tag-pill">Social Media Posts</span>
             <span class="tag-pill">Ad Creatives</span>
@@ -827,8 +834,8 @@ footer{ background:var(--navy-950); color:var(--ink-muted); padding:70px 0 30px;
     <div class="wrap">
       <div class="solutions-panel reveal">
         <span class="eyebrow" style="color:var(--cyan-300);">Who We Work With</span>
-        <h2>We don't just build websites. We help businesses build and grow their online presence.</h2>
-        <p class="lead">Every business is at a different stage — some need a first website, others need consistent content and ads running every week. We shape the work around where you actually are.</p>
+        <h2>We build websites and help businesses grow their online presence.</h2>
+        <p class="lead">Every business is at a different stage — some need a first website, others need consistent content and ads running every week. We shape the work around where you are.</p>
         <div class="solutions-list">
           <span>Small Businesses</span>
           <span>Startups</span>
@@ -853,12 +860,12 @@ footer{ background:var(--navy-950); color:var(--ink-muted); padding:70px 0 30px;
         <h2>One team for the website, the marketing and the content behind it.</h2>
       </div>
       <div class="why-grid reveal">
-        <div class="why-item"><h3>Websites That Work</h3><p>Clean, responsive websites built around what your business actually needs.</p></div>
+        <div class="why-item"><h3>Websites That Work</h3><p>Clean, responsive websites built around what your business needs.</p></div>
         <div class="why-item"><h3>Marketing That Follows Through</h3><p>The website isn't the finish line — we help drive traffic and attention to it too.</p></div>
         <div class="why-item"><h3>Straightforward Pricing</h3><p>Clear scope and pricing discussed upfront, no hidden add-ons.</p></div>
         <div class="why-item"><h3>Built for Growth</h3><p>Sites, content and campaigns structured so they can grow with your business.</p></div>
         <div class="why-item"><h3>Direct Communication</h3><p>You talk to the people doing the work, not a call centre.</p></div>
-        <div class="why-item"><h3>Practical Advice</h3><p>We tell you what your business actually needs, not what sounds impressive.</p></div>
+        <div class="why-item"><h3>Practical Advice</h3><p>We tell you what your business needs, not what sounds impressive.</p></div>
       </div>
     </div>
   </section>
@@ -877,9 +884,9 @@ footer{ background:var(--navy-950); color:var(--ink-muted); padding:70px 0 30px;
       </div>
       <div class="about-copy reveal">
         <span class="eyebrow">About IT's Solution</span>
-        <h2 style="margin-top:14px;">A digital marketing agency </h2>
+        <h2 style="margin-top:14px;">A digital marketing agency</h2>
         <p>IT's Solution combines web development, digital marketing, social media, Meta Ads, video editing and graphic design under one team.</p>
-        <p>Most businesses don't need a dozen different vendors. They need a website that works, social accounts that are actually managed, ads that reach the right people, and content that looks like it belongs to a real brand. That's what we handle, from the first conversation to ongoing support.</p>
+        <p>Most businesses don't need a dozen different vendors. They need a website that works, social accounts that are managed, ads that reach the right people, and content that fits the brand. That's what we handle, from the first conversation to ongoing support.</p>
         <a href="#request" class="btn btn-ghost" data-nav="request">Work with us</a>
       </div>
     </div>
@@ -908,9 +915,13 @@ footer{ background:var(--navy-950); color:var(--ink-muted); padding:70px 0 30px;
             <span class="ic"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
             +92 334 2128122
           </a>
-          <a href="https://www.instagram.com/itssolution32/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/itssolution_2026/" target="_blank" rel="noopener noreferrer">
             <span class="ic"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></span>
             Message us on Instagram
+          </a>
+          <a href="mailto:itssolution3@gmail.com">
+            <span class="ic"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+            itssolution3@gmail.com
           </a>
         </div>
       </div>
@@ -1027,7 +1038,8 @@ footer{ background:var(--navy-950); color:var(--ink-muted); padding:70px 0 30px;
         <h4>Contact</h4>
         <ul>
           <li><a href="tel:+923342128122">+92 334 2128122</a></li>
-          <li><a href="https://www.instagram.com/itssolution32/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="https://www.instagram.com/itssolution_2026/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="mailto:itssolution3@gmail.com">itssolution3@gmail.com</a></li>
           <li><a href="#request" data-nav="request">Start Your Project</a></li>
         </ul>
       </div>
@@ -1097,7 +1109,7 @@ const processSteps = [
   {n:'02', t:'Plan & Strategy', d:'We map out the right mix of website, marketing and creative work for your situation.'},
   {n:'03', t:'Create & Build', d:'Your website, campaigns or creative content are designed and built, with room to review along the way.'},
   {n:'04', t:'Launch', d:'The website goes live or the campaign launches once everything is tested and approved.'},
-  {n:'05', t:'Optimize & Grow', d:'Ongoing management and adjustments based on how things are actually performing.'},
+  {n:'05', t:'Optimize & Grow', d:'Ongoing management and adjustments based on how things are performing.'},
 ];
 
 /* ============ RENDER ============ */
